@@ -6,7 +6,7 @@ if (typeof makeImage === 'undefined') {
 makeImage.draw = (function() {
 
     var logoImage = new Image();
-    logoImage.src = "SVTC Logo.png";
+    logoImage.src = "SVTCLogo.png";
 
     var userImage = new Image();
 
@@ -86,8 +86,15 @@ makeImage.draw = (function() {
         var name = $("#nameInput").val();
         if (name.length > 20) {
             context.font = "30pt Futura, Calibri, New Times Roman";
-            context.fillText(name.substr(0,name.indexOf(' ')), 300, 525);
-            context.fillText(name.substr(name.indexOf(' ')+1), 300, 565);
+            let ind1 = name.indexOf(' ');
+            let first = name.substr(0,ind1);
+            let rest = name.substr(ind1+1);
+            let ind2 = rest.indexOf(' ');
+            let second = rest.substr(0,ind2);
+            let secondLine = rest.substr(ind2+1);
+            let firstLine = first + ' ' + second;
+            context.fillText(firstLine, 300, 525);
+            context.fillText(secondLine, 300, 565);
         } else {
             context.font = "40pt Futura, Calibri, New Times Roman";
             context.fillText(name, 300, 545);
@@ -221,7 +228,7 @@ makeImage.draw = (function() {
         }
 
         if (hours == 0) {
-            hours = "00";
+            hours = "0";
         }
 
         if (minutes == 0) {

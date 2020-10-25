@@ -1,7 +1,5 @@
-A simple page for making race finisher images
+A simple page for making race finisher images created by Marc Creamer, [Click Here](https://bubzor888.github.io/index.html) to try out the original version.
 
-[Click Here](https://bubzor888.github.io/index.html) to try it out.
 
-[SVTC Click Here](https://github.com/iotabeam/bubzor888.github.io/index.html) to try out
+[Click Here](https://siliconvalleytriathlonclub.github.io/index.html) for the Silicon Valley Triathlon Club 2020 Halloween Triathlon version
 
-https://github.com/iotabeam/bubzor888.github.io/blob/main/index.html
