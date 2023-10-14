@@ -6,7 +6,7 @@ if (typeof makeImage === 'undefined') {
 makeImage.draw = (function() {
 
     var logoImage = new Image();
-    logoImage.src = "SVTCHalloweenTriPumkins.png";
+    logoImage.src = "SVTCHalloweenTri.jpeg";
 
     var userImage = new Image();
 
